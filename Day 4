@@ -1,0 +1,183 @@
+// #include <stdio.h>
+
+// int main() {
+//     int n, i;
+//     int a = 0, b = 1, c;
+
+//     printf("Enter number of terms: ");               CODE NUMBER 1
+//     scanf("%d", &n);
+
+//     for(i = 1; i <= n; i++) {
+//         printf("%d ", a);
+//         c = a + b;
+//         a = b;
+//         b = c;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main() {                                         CODE NUMBER 2 
+//     int n, i;
+//     int a = 0, b = 1, c;
+
+//     printf("Enter n: ");
+//     scanf("%d", &n);
+
+//     if(n == 1)
+//         printf("0");
+//     else if(n == 2)
+//         printf("1");
+//     else {
+//         for(i = 3; i <= n; i++) {
+//             c = a + b;
+//             a = b;
+//             b = c;
+//         }
+//         printf("%d", b);
+//     }
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, temp, r, sum = 0;         CODE NUMBER 3
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     temp = n;
+
+//     while(n > 0) {
+//         r = n % 10;
+//         sum = sum + (r * r * r);
+//         n = n / 10;
+//     }
+
+//     if(sum == temp)
+//         printf("Armstrong");
+//     else
+//         printf("Not Armstrong");
+
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int start, end, n, temp, r, sum;                 CODE NUMBER 4
+
+//     printf("Enter range (start end): ");
+//     scanf("%d %d", &start, &end);
+
+//     for(n = start; n <= end; n++) {
+//         temp = n;
+//         sum = 0;
+
+//         while(temp > 0) {
+//             r = temp % 10;
+//             sum = sum + (r * r * r);
+//             temp = temp / 10;
+//         }
+
+//         if(sum == n) {
+//             printf("%d ", n);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

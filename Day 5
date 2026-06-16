@@ -1,0 +1,123 @@
+// #include <stdio.h>
+
+// int main() {
+//     int n, i, sum = 0;                 CODE NUMBER 1 
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     for(i = 1; i < n; i++) {
+//         if(n % i == 0) {
+//             sum = sum + i;
+//         }
+//     }
+
+//     if(sum == n)
+//         printf("Perfect Number");
+//     else
+//         printf("Not Perfect Number");
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, temp, r, i, fact, sum = 0;                              CODE NUMBER 2
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     temp = n;
+
+//     while(n > 0) {
+//         r = n % 10;
+
+//         fact = 1;
+//         for(i = 1; i <= r; i++) {
+//             fact = fact * i;
+//         }
+
+//         sum = sum + fact;
+//         n = n / 10;
+//     }
+
+//     if(sum == temp)
+//         printf("Strong Number");
+//     else
+//         printf("Not Strong Number");
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, i;
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);                                     CODE NUMBER 3
+
+//     printf("Factors: ");
+
+//     for(i = 1; i <= n; i++) {
+//         if(n % i == 0) {
+//             printf("%d ", i);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, i, largest = 0, j, flag;                  CODE NUMBER 4 
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     for(i = 2; i <= n; i++) {
+//         if(n % i == 0) {
+
+//             // check if i is prime
+//             flag = 0;
+//             for(j = 2; j < i; j++) {
+//                 if(i % j == 0) {
+//                     flag = 1;
+//                     break;
+//                 }
+//             }
+
+//             if(flag == 0) {
+//                 largest = i;
+//             }
+//         }
+//     }
+
+//     printf("Largest Prime Factor = %d", largest);
+
+//     return 0;
+// }
+
+
+
+
+

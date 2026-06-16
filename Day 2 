@@ -1,0 +1,112 @@
+// #include <stdio.h>
+
+// int main() {               CODE NUMBER 1
+//     int n, sum = 0;
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     while(n > 0) {
+//         sum = sum + (n % 10);
+//         n = n / 10;
+//     }
+
+//     printf("Sum = %d", sum);
+
+//     return 0;
+// }
+
+
+
+
+
+//  #include <stdio.h>
+                                        //   CODE NUMBER 2
+// int main() {
+//     int n, rev = 0;
+
+//     printf("Enter number: ");
+//     scanf("%d", &n);
+
+//     while(n > 0) {
+//         rev = rev * 10 + (n % 10);
+//         n = n / 10;
+//     }
+
+//     printf("Reversed number = %d", rev);
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, prod = 1;
+
+//     printf("Enter number: ");            CODE NUMBER 3
+//     scanf("%d", &n);
+
+//     while(n > 0) {
+//         prod = prod * (n % 10);
+//         n = n / 10;
+//     }
+
+//     printf("Product = %d", prod);
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, rev = 0, temp;
+
+//     printf("Enter number: ");            CODE NUMBER 4
+//     scanf("%d", &n);
+
+//     temp = n;
+
+//     while(n > 0) {
+//         rev = rev * 10 + (n % 10);
+//         n = n / 10;
+//     }
+
+//     if(temp == rev)
+//         printf("Palindrome");
+//     else
+//         printf("Not Palindrome");
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
