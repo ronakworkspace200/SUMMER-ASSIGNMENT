@@ -1,0 +1,174 @@
+// #include <stdio.h>
+
+// int main()
+// {
+//     int arr[100], n, i, j, temp;                                             CODE NUMBER 1
+
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
+
+    
+//     for(i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+
+  
+//     for(i = 0; i < n - 1; i++)
+//     {
+//         for(j = 0; j < n - 1 - i; j++)
+//         {
+//             if(arr[j] > arr[j + 1])
+//             {
+//                 // swap
+//                 temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+//         }
+//     }
+
+
+//     printf("Sorted array:\n");
+//     for(i = 0; i < n; i++)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>
+
+// int main()                                                                        CODE NUMBER 2
+// {
+//     int arr[100], n, i, j, minIndex, temp;
+
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
+
+
+//     for(i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+
+   
+//     for(i = 0; i < n - 1; i++)
+//     {
+//         minIndex = i;
+
+//         for(j = i + 1; j < n; j++)
+//         {
+//             if(arr[j] < arr[minIndex])
+//             {
+//                 minIndex = j;
+//             }
+//         }
+
+      
+//         temp = arr[i];
+//         arr[i] = arr[minIndex];
+//         arr[minIndex] = temp;
+//     }
+//     printf("Sorted array:\n");
+//     for(i = 0; i < n; i++)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main()                                                                           CODE NUMBER 3
+// {
+//     int arr[100], n, i, key;
+//     int low, high, mid, found = 0;
+
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
+
+//     printf("Enter sorted elements:\n");
+//     for(i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
+
+//     low = 0;
+//     high = n - 1;
+
+//     while(low <= high)
+//     {
+//         mid = (low + high) / 2;
+
+//         if(arr[mid] == key)
+//         {
+//             printf("Element found at position %d", mid + 1);
+//             found = 1;
+//             break;
+//         }
+//         else if(arr[mid] < key)
+//         {
+//             low = mid + 1;
+//         }
+//         else
+//         {
+//             high = mid - 1;
+//         }
+//     }
+
+//     if(!found)
+//     {
+//         printf("Element not found");
+//     }
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>                                                                           CODE NUMBER 4
+
+// int main()
+// {
+//     int arr[100], n, i, j, temp;
+
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
+
+//     for(i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+
+  
+//     for(i = 0; i < n - 1; i++)
+//     {
+//         for(j = i + 1; j < n; j++)
+//         {
+//             if(arr[i] < arr[j])
+//             {
+//                 // swap
+//                 temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+
+
+//     printf("Array in descending order:\n");
+//     for(i = 0; i < n; i++)
+//     {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
