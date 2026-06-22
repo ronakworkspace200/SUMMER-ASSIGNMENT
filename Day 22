@@ -1,0 +1,155 @@
+// #include <stdio.h>                                                      CODE NUMBER 1
+
+// int main()
+// {
+//     char str[100];
+//     int i = 0, length = 0, flag = 1;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+
+//     while(str[length] != '\0')
+//     {
+//         length++;
+//     }
+
+//     for(i = 0; i < length / 2; i++)
+//     {
+//         if(str[i] != str[length - 1 - i])
+//         {
+//             flag = 0;
+//             break;
+//         }
+//     }
+
+//     if(flag == 1)
+//         printf("Palindrome string");
+//     else
+//         printf("Not a palindrome");
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>                                                       CODE NUMBER 2
+
+// int main()
+// {
+//     char str[100];
+//     int i = 0, words = 1;
+
+//     printf("Enter a sentence: ");
+//     fgets(str, sizeof(str), stdin);
+
+
+//     while(str[i] != '\0')
+//     {
+//         if(str[i] == ' ')
+//         {
+//             words++;
+//         }
+//         i++;
+//     }
+
+//     printf("Number of words = %d", words);
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>               #include <stdio.h>
+
+// int main()
+// {
+//     char str[100];
+//     int i, j, count;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+//     for(i = 0; str[i] != '\0'; i++)
+//     {
+//         count = 1;
+
+//         if(str[i] == '\0')
+//             continue;
+
+//         for(j = i + 1; str[j] != '\0'; j++)
+//         {
+//             if(str[i] == str[j])
+//             {
+//                 count++;
+//                 str[j] = '\0'; 
+//             }
+//         }
+
+//         printf("%c = %d\n", str[i], count);
+//     }
+
+//     return 0;
+// }      
+
+
+
+
+// int main() `                                                         CODE NUMBRER 3
+// {
+//     char str[100];
+//     int i, j, count;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+//     for(i = 0; str[i] != '\0'; i++)
+//     {
+//         count = 1;
+
+//         if(str[i] == '\0')
+//             continue;
+
+//         for(j = i + 1; str[j] != '\0'; j++)
+//         {
+//             if(str[i] == str[j])
+//             {
+//                 count++;
+//                 str[j] = '\0'; 
+//             }
+//         }
+
+//         printf("%c = %d\n", str[i], count);
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>                                                       CODE NUMBER 4                                         
+
+// int main()
+// {
+//     char str[100];
+//     int i = 0, j = 0;
+
+//     printf("Enter a string: ");
+//     fgets(str, sizeof(str), stdin);
+
+//     while(str[i] != '\0')
+//     {
+//         if(str[i] != ' ')
+//         {
+//             str[j] = str[i];
+//             j++;
+//         }
+//         i++;
+//     }
+
+//     str[j] = '\0';  
+
+//     printf("String without spaces = %s", str);
+
+//     return 0;
+// }
