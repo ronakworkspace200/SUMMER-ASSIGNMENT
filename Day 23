@@ -1,0 +1,143 @@
+// #include <stdio.h>                                       CODE NUMBER 1
+
+// int main()
+// {
+//     char str[100];
+//     int i, j, count;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+//     for(i = 0; str[i] != '\0'; i++)
+//     {
+//         count = 0;
+
+//         for(j = 0; str[j] != '\0'; j++)
+//         {
+//             if(str[i] == str[j])
+//             {
+//                 count++;
+//             }
+//         }
+
+//         if(count == 1)
+//         {
+//             printf("First non-repeating character = %c", str[i]);
+//             break;
+//         }
+//     }
+
+//     if(str[i] == '\0')
+//     {
+//         printf("No non-repeating character found");
+//     }
+
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>                                           CODE NUMBER 2
+
+// int main()
+// {
+//     char str[100];
+//     int i, j;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+//     for(i = 0; str[i] != '\0'; i++)
+//     {
+//         for(j = i + 1; str[j] != '\0'; j++)
+//         {
+//             if(str[i] == str[j])
+//             {
+//                 printf("First repeating character = %c", str[i]);
+//                 return 0;
+//             }
+//         }
+//     }
+
+//     printf("No repeating character found");
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>                                           CODE NUMBER 3
+// int main()
+// {
+//     char str1[100], str2[100];
+//     int i, count1[26] = {0}, count2[26] = {0};
+
+//     printf("Enter first string: ");
+//     scanf("%s", str1);
+
+//     printf("Enter second string: ");
+//     scanf("%s", str2);
+
+   
+//     for(i = 0; str1[i] != '\0'; i++)
+//     {
+//         count1[str1[i] - 'a']++;
+//     }
+
+    
+//     for(i = 0; str2[i] != '\0'; i++)
+//     {
+//         count2[str2[i] - 'a']++;
+//     }
+
+
+//     for(i = 0; i < 26; i++)
+//     {
+//         if(count1[i] != count2[i])
+//         {
+//             printf("Not anagrams");
+//             return 0;
+//         }
+//     }
+
+//     printf("Strings are anagrams");
+
+//     return 0;
+// }
+
+
+// #include <stdio.h>                                           CODE NUMBER 4
+
+// int main()
+// {
+//     char str[100];
+//     int i, j, count, max = 0;
+//     char maxChar;
+
+//     printf("Enter a string: ");
+//     scanf("%s", str);
+
+//     for(i = 0; str[i] != '\0'; i++)
+//     {
+//         count = 1;
+
+//         for(j = i + 1; str[j] != '\0'; j++)
+//         {
+//             if(str[i] == str[j])
+//             {
+//                 count++;
+//             }
+//         }
+
+//         if(count > max)
+//         {
+//             max = count;
+//             maxChar = str[i];
+//         }
+//     }
+
+//     printf("Maximum occurring character = %c", maxChar);
+
+//     return 0;
+// }
