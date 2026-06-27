@@ -1,0 +1,126 @@
+// #include <stdio.h>                                       CODE NUMBER 1
+
+// struct Student
+// {
+//     int id;
+//     char name[50];
+//     float marks;
+// };
+
+// int main()
+// {
+//     struct Student s[10];
+//     int n, i;
+
+//     printf("Enter number of students: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("\nEnter ID, Name, Marks: ");
+//         scanf("%d %s %f", &s[i].id, s[i].name, &s[i].marks);
+//     }
+
+//     printf("\nStudent Records:\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("ID: %d Name: %s Marks: %.2f\n", s[i].id, s[i].name, s[i].marks);
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+// #include <stdio.h>                                                       CODE NUMBER 2
+
+// struct Employee
+// {
+//     int id;
+//     char name[50];
+//     float salary;
+// };
+
+// int main()
+// {
+//     struct Employee e[10];
+//     int n, i;
+
+//     printf("Enter number of employees: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("\nEnter ID, Name, Salary: ");
+//         scanf("%d %s %f", &e[i].id, e[i].name, &e[i].salary);
+//     }
+
+//     printf("\nEmployee Records:\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("ID: %d Name: %s Salary: %.2f\n", e[i].id, e[i].name, e[i].salary);
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>                                                   CODE NUMBER 3
+
+// int main()
+// {
+//     float basic, hra, da, total;
+
+//     printf("Enter basic salary: ");
+//     scanf("%f", &basic);
+
+//     hra = 0.20 * basic;
+//     da = 0.10 * basic;
+
+//     total = basic + hra + da;
+
+//     printf("HRA = %.2f\n", hra);
+//     printf("DA = %.2f\n", da);
+//     printf("Total Salary = %.2f\n", total);
+
+//     return 0;
+// }
+
+
+
+
+
+
+// #include <stdio.h>                                                                               CODE NUMBER 4
+
+// int main()
+// {
+//     int m1, m2, m3, m4, m5, total;
+//     float avg;
+
+//     printf("Enter marks of 5 subjects: ");
+//     scanf("%d %d %d %d %d", &m1, &m2, &m3, &m4, &m5);
+
+//     total = m1 + m2 + m3 + m4 + m5;
+//     avg = total / 5.0;
+
+//     printf("Total = %d\n", total);
+//     printf("Average = %.2f\n", avg);
+
+//     if(avg >= 90)
+//         printf("Grade: A");
+//     else if(avg >= 75)
+//         printf("Grade: B");
+//     else if(avg >= 50)
+//         printf("Grade: C");
+//     else
+//         printf("Grade: Fail");
+
+//     return 0;
+// }
