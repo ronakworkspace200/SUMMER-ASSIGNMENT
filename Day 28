@@ -1,0 +1,169 @@
+// #include <stdio.h>                                                      CODE NUMBER 1
+
+// struct Book
+// {
+//     int id;
+//     char name[50];
+// };
+
+// int main()
+// {
+//     struct Book b[10];
+//     int n, i;
+
+//     printf("Enter number of books: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter Book ID and Name: ");
+//         scanf("%d %s", &b[i].id, b[i].name);
+//     }
+
+//     printf("\nBook Records:\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("ID: %d Name: %s\n", b[i].id, b[i].name);
+//     }
+
+//     return 0;
+    
+// }
+
+
+
+
+
+
+// #include <stdio.h>                                               CODE NUMBER 2
+
+// int main()
+// {
+//     int choice;
+//     float balance = 0, amount;
+
+//     while(1)
+//     {
+//         printf("\n1.Deposit\n2.Withdraw\n3.Check Balance\n4.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 1)
+//         {
+//             printf("Enter amount: ");
+//             scanf("%f", &amount);
+//             balance += amount;
+//         }
+//         else if(choice == 2)
+//         {
+//             printf("Enter amount: ");
+//             scanf("%f", &amount);
+//             if(amount <= balance)
+//                 balance -= amount;
+//             else
+//                 printf("Insufficient balance\n");
+//         }
+//         else if(choice == 3)
+//         {
+//             printf("Balance = %.2f\n", balance);
+//         }
+//         else if(choice == 4)
+//         {
+//             break;
+//         }
+//         else
+//         {
+//             printf("Invalid choice\n");
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <stdio.h>                                                                       CODE NUMBER 3
+
+// int main()
+// {
+//     int seats = 10, choice, tickets;
+
+//     while(1)
+//     {
+//         printf("\n1.Book Ticket\n2.Check Seats\n3.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 1)
+//         {
+//             printf("Enter number of tickets: ");
+//             scanf("%d", &tickets);
+
+//             if(tickets <= seats)
+//             {
+//                 seats -= tickets;
+//                 printf("Booking successful\n");
+//             }
+//             else
+//             {
+//                 printf("Not enough seats\n");
+//             }
+//         }
+//         else if(choice == 2)
+//         {
+//             printf("Available seats = %d\n", seats);
+//         }
+//         else if(choice == 3)
+//         {
+//             break;
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>                                                       CODE NUMBER 4
+
+// struct Contact
+// {
+//     char name[50];
+//     char phone[15];
+// };
+
+// int main()
+// {
+//     struct Contact c[10];
+//     int n, i;
+
+//     printf("Enter number of contacts: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter Name and Phone: ");
+//         scanf("%s %s", c[i].name, c[i].phone);
+//     }
+
+//     printf("\nContact List:\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Name: %s Phone: %s\n", c[i].name, c[i].phone);
+//     }
+
+//     return 0;
+// }
+
+
+
+
