@@ -1,0 +1,166 @@
+// #include <stdio.h>                                                           CODE NUMBER 1
+
+// int main()
+// {
+//     int choice;
+//     float a, b;
+
+//     while(1)
+//     {
+//         printf("\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 5)
+//             break;
+
+//         printf("Enter two numbers: ");
+//         scanf("%f %f", &a, &b);
+
+//         if(choice == 1)
+//             printf("Result = %.2f\n", a + b);
+//         else if(choice == 2)
+//             printf("Result = %.2f\n", a - b);
+//         else if(choice == 3)
+//             printf("Result = %.2f\n", a * b);
+//         else if(choice == 4)
+//         {
+//             if(b != 0)
+//                 printf("Result = %.2f\n", a / b);
+//             else
+//                 printf("Division by zero not allowed\n");
+//         }
+//         else
+//             printf("Invalid choice\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// #include <stdio.h>                                                                          CODE NUMBER 2
+
+// int main()
+// {
+//     int arr[50], n, i, choice, sum;
+
+//     printf("Enter size: ");
+//     scanf("%d", &n);
+
+//     printf("Enter elements:\n");
+//     for(i=0; i<n; i++)
+//         scanf("%d", &arr[i]);
+
+//     while(1)
+//     {
+//         printf("\n1.Display\n2.Sum\n3.Reverse\n4.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 1)
+//         {
+//             for(i=0; i<n; i++)
+//                 printf("%d ", arr[i]);
+//         }
+//         else if(choice == 2)
+//         {
+//             sum = 0;
+//             for(i=0; i<n; i++)
+//                 sum += arr[i];
+//             printf("Sum = %d", sum);
+//         }
+//         else if(choice == 3)
+//         {
+//             for(i=n-1; i>=0; i--)
+//                 printf("%d ", arr[i]);
+//         }
+//         else if(choice == 4)
+//             break;
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>                                                                           CODE NUMBER 3
+// #include <string.h>
+
+// int main()
+// {
+//     char str[100];
+//     int choice, i, len = 0;
+
+//     printf("Enter string: ");
+//     scanf("%s", str);
+
+//     while(1)
+//     {
+//         printf("\n1.Length\n2.Reverse\n3.Uppercase\n4.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 1)
+//         {
+//             len = strlen(str);
+//             printf("Length = %d", len);
+//         }
+//         else if(choice == 2)
+//         {
+//             for(i = strlen(str)-1; i >= 0; i--)
+//                 printf("%c", str[i]);
+//         }
+//         else if(choice == 3)
+//         {
+//             for(i=0; str[i]!='\0'; i++)
+//             {
+//                 if(str[i] >= 'a' && str[i] <= 'z')
+//                     str[i] = str[i] - 32;
+//             }
+//             printf("Uppercase: %s", str);
+//         }
+//         else if(choice == 4)
+//             break;
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+// #include <stdio.h>                                                       CODE NUMBER 4
+
+// struct Item
+// {
+//     int id;
+//     char name[50];
+//     int quantity;
+// };
+
+// int main()
+// {
+//     struct Item items[10];
+//     int n, i;
+
+//     printf("Enter number of items: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter ID, Name, Quantity: ");
+//         scanf("%d %s %d", &items[i].id, items[i].name, &items[i].quantity);
+//     }
+
+//     printf("\nInventory:\n");
+//     for(i=0; i<n; i++)
+//     {
+//         printf("ID: %d Name: %s Quantity: %d\n",
+//                items[i].id, items[i].name, items[i].quantity);
+//     }
+
+//     return 0;
+// }
