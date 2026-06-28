@@ -1,0 +1,185 @@
+// #include <stdio.h>                                                           CODE NUMBER 1
+
+// struct Student
+// {
+//     int id;
+//     char name[50];
+//     float marks;
+// };
+
+// void display(struct Student s[], int n)
+// {
+//     int i;
+//     for(i=0; i<n; i++)
+//         printf("%d %s %.2f\n", s[i].id, s[i].name, s[i].marks);
+// }
+
+// int main()
+// {
+//     struct Student s[10];
+//     int n, i;
+
+//     printf("Enter number of students: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter ID Name Marks: ");
+//         scanf("%d %s %f", &s[i].id, s[i].name, &s[i].marks);
+//     }
+
+//     printf("\nStudent Records:\n");
+//     display(s, n);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+// #include <stdio.h>                                                   CODE NUMBER 2
+
+// struct Book
+// {
+//     int id;
+//     char name[50];
+// };
+
+// void display(struct Book b[], int n)
+// {
+//     int i;
+//     for(i=0; i<n; i++)
+//         printf("%d %s\n", b[i].id, b[i].name);
+// }
+
+// int main()
+// {
+//     struct Book b[10];
+//     int n, i;
+
+//     printf("Enter number of books: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter ID and Name: ");
+//         scanf("%d %s", &b[i].id, b[i].name);
+//     }
+
+//     printf("\nLibrary Records:\n");
+//     display(b, n);
+
+//     return 0;
+// }
+
+
+
+// #include <stdio.h>                                               CODE NUMBER 3
+
+// struct Employee
+// {
+//     int id;
+//     char name[50];
+//     float salary;
+// };
+
+// void display(struct Employee e[], int n)
+// {
+//     int i;
+//     for(i=0; i<n; i++)
+//         printf("%d %s %.2f\n", e[i].id, e[i].name, e[i].salary);
+// }
+
+// int main()
+// {
+//     struct Employee e[10];
+//     int n, i;
+
+//     printf("Enter number of employees: ");
+//     scanf("%d", &n);
+
+//     for(i=0; i<n; i++)
+//     {
+//         printf("Enter ID Name Salary: ");
+//         scanf("%d %s %f", &e[i].id, e[i].name, &e[i].salary);
+//     }
+
+//     printf("\nEmployee Records:\n");
+//     display(e, n);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+// #include <stdio.h>                                                                           CODE NUMBER 4
+
+// struct Student
+// {
+//     int id;
+//     char name[50];
+//     float marks;
+// };
+
+// void add(struct Student s[], int *n)
+// {
+//     printf("Enter ID Name Marks: ");
+//     scanf("%d %s %f", &s[*n].id, s[*n].name, &s[*n].marks);
+//     (*n)++;
+// }
+
+// void display(struct Student s[], int n)
+// {
+//     int i;
+//     for(i=0; i<n; i++)
+//         printf("%d %s %.2f\n", s[i].id, s[i].name, s[i].marks);
+// }
+
+// void search(struct Student s[], int n)
+// {
+//     int id, i;
+//     printf("Enter ID to search: ");
+//     scanf("%d", &id);
+
+//     for(i=0; i<n; i++)
+//     {
+//         if(s[i].id == id)
+//         {
+//             printf("Found: %d %s %.2f\n", s[i].id, s[i].name, s[i].marks);
+//             return;
+//         }
+//     }
+//     printf("Not found\n");
+// }
+
+// int main()
+// {
+//     struct Student s[10];
+//     int n = 0, choice;
+
+//     while(1)
+//     {
+//         printf("\n1.Add\n2.Display\n3.Search\n4.Exit\n");
+//         scanf("%d", &choice);
+
+//         if(choice == 1)
+//             add(s, &n);
+//         else if(choice == 2)
+//             display(s, n);
+//         else if(choice == 3)
+//             search(s, n);
+//         else if(choice == 4)
+//             break;
+//     }
+
+//     return 0;
+// }
